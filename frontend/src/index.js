@@ -4,6 +4,8 @@ import './index.css';
 import { BrowserRouter } from "react-router-dom";
 import Root from "./pages";
 import reportWebVitals from './reportWebVitals';
+import "./index.css";
+import "antd/dist/antd.less";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

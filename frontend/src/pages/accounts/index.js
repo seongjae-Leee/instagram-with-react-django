@@ -6,10 +6,10 @@ import Profile from './Profile';
 function AccountsRoutes({ match }) {
   return (
     <div>
-      account index.js
+      accounts index.js
       <Routes>
-        <Route path={"/profile"} element={<Profile />} />
-        <Route path={"/login"} element={<Login />} />
+        <Route path={match.url + "/profile"} element={<Profile />} />
+        <Route path={match.url + "/login"} element={<Login />} />
       </Routes>
     </div>
   );
