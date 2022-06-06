@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AppLayout from '../components/AppLayout';
 import About from './About';
-import AccountsRoutes from './accounts';
+import AccountsRoutes from './accounts/index';
 import Home from './Home';
 
 function Root() {
@@ -13,7 +13,7 @@ function Root() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/accounts' element={<AccountsRoutes />} />
+          <Route path='/accounts/*' element={<AccountsRoutes />} />
         </Routes>
       </AppLayout>
     </div>
