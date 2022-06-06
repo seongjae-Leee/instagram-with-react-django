@@ -1,37 +1,42 @@
-.app{
-  background-color: rgb(253, 216, 221);
-  width: 1024px;
+.app {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "contents contents sidebar"
+    "footer footer footer";
+
+    // background-color: rgb(255, 217, 223);
   border: 3px solid #333;
+  width: 1024px;
   max-width: 100%;
   margin: 10px auto;
 
-  .header{
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    grid-area: header;
 
-    .page-title{
-
+    .page-title {
     }
-
-    .search{
-
+    .search {
     }
-
-    .topnav{
-
+    .topnav {
     }
   }
-  
-  .sidebar{
-  
-  }
-  
-  .contents{
-    
+
+  .sidebar {
+    grid-area: sidebar;
   }
 
-  .footer{
+  .contents {
+    grid-area: contents;
+  }
 
+  .footer {
+    grid-area: footer;
+    justify-self: center;
   }
 }
