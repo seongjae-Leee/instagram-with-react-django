@@ -9,7 +9,7 @@ function Root() {
   return (
     <div>
       <AppLayout>
-        최상위 컴포넌트(children)
+        최상위 컴포넌트 (children)
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
